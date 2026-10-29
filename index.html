@@ -101,7 +101,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
       <span>Versió <b>1.0</b> · emès el <b>22/10/2026</b></span>
     </div>
     <div class="kpis">
-      <div class="kpi"><div class="v"><span class="energy">A</span></div><div class="l">Classe energètica · 52 kWh/100 cicles</div></div>
+      <div class="kpi"><div class="v"><span class="energy">A</span></div><div class="l">Classe energètica · EEI 52,0 · 0,544 kWh per cicle eco 40-60</div></div>
       <div class="kpi"><div class="v">815,8 kg</div><div class="l">CO2eq en tot el cicle de vida (172,3 kg del bressol a la porta)</div></div>
       <div class="kpi"><div class="v">10 anys</div><div class="l">Vida útil · uns 3.650 cicles</div></div>
       <div class="kpi"><div class="v">52–69 %</div><div class="l">de la massa és reciclable (metalls; amb plàstics marcats)</div></div>
@@ -117,15 +117,32 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     <dl>
       <dt>Identificador únic (UID)</dt><dd class="mono">DPP-ES-FES-12980-2026-000417 (exemple)</dd>
       <dt>Producte</dt><dd>Rentadora domèstica de càrrega frontal, 12 kg</dd>
-      <dt>Marca i model</dt><dd>Cecotec · Bolero DressCode 12980 Direct Drive Steel A</dd>
+      <dt>Marca i model</dt><dd>Cecotec · Bolero DressCode 12980 Direct Drive Steel A (identificador del model: 01918)</dd>
       <dt>Lot i unitat</dt><dd>Lot 2026-W39 · unitat 417 de 1.000</dd>
-      <dt>Fabricant</dt><dd>Planta de l'escenari de l'Exercici 2 (100 treballadors, 1.000 unitats/any). Raó social, adreça i identificador d'operador: pendents</dd>
-      <dt>País d'origen</dt><dd>Espanya (Catalunya), segons l'escenari de l'Exercici 2</dd>
-      <dt>GTIN / EAN</dt><dd>Codi GS1 del fabricant (no inclòs en aquest prototip)</dd>
+      <dt>Proveïdor (operador econòmic)</dt><dd>Cecotec Innovaciones, S.L. · Av. Reyes Católicos, 60, 46910 Alfafar (València)</dd>
+      <dt>Instal·lació de fabricació</dt><dd>Planta de l'escenari de l'Exercici 2 (100 treballadors, 1.000 unitats/any) · identificador <span class="mono">FES-PLANT-01</span> (exemple)</dd>
+      <dt>País d'origen</dt><dd>Espanya (Catalunya), segons l'escenari de l'Exercici 2. El fabricant no declara el país de fabricació real; si fos fora de la UE, la distribució tindria més impacte que els 55,2 kg CO2eq calculats</dd>
+      <dt>GTIN / EAN</dt><dd class="mono">8435484019187</dd>
       <dt>Codi NC / TARIC</dt><dd class="mono">8450 20 00 · rentadores de més de 10 kg</dd>
-      <dt>Característiques</dt><dd>Motor Direct Drive amb inverter · 0,52 kWh i 50 l per cicle · massa 75 kg (estimació)</dd>
-      <dt>Classe energètica</dt><dd>A (Reglament (UE) 2019/2014). Consum de 52 kWh/100 cicles calculat amb les dades de l'exercici; cal verificar-lo a EPREL</dd>
+      <dt>Característiques</dt><dd>Motor Direct Drive amb inverter · 1.400 rpm · lliure instal·lació · massa 75 kg (estimació)</dd>
+      <dt>Registre EPREL</dt><dd>No consta a la fitxa d'informació del producte; s'obté amb el QR de l'etiqueta energètica</dd>
     </dl>
+    <h3 style="font-size:16px">Dades de l'etiqueta energètica</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>Paràmetre (Reglament (UE) 2019/2014)</th><th>Valor</th></tr></thead>
+      <tbody>
+        <tr><td>Capacitat nominal</td><td>12,0 kg</td></tr>
+        <tr><td>Classe d'eficiència energètica</td><td>A (EEI = 52,0)</td></tr>
+        <tr><td>Energia per cicle, eco 40-60 a plena càrrega</td><td>0,544 kWh</td></tr>
+        <tr><td>Aigua per cicle, eco 40-60</td><td>50 l</td></tr>
+        <tr><td>Durada del programa eco 40-60</td><td>4:00 h a plena càrrega · 3:12 h a mitja càrrega i a un quart</td></tr>
+        <tr><td>Temperatura màxima de la roba (eco 40-60)</td><td>34 °C</td></tr>
+        <tr><td>Classe d'eficiència del centrifugat</td><td>B · humitat residual del 53,9 % · 1.400 rpm</td></tr>
+        <tr><td>Soroll en el centrifugat</td><td>76 dB(A), classe B</td></tr>
+        <tr><td>Potència en mode apagat i en inici diferit</td><td>0,50 W i 4,00 W</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Font: fitxa d'informació del producte de Cecotec. L'ACV de l'Exercici 2 fa servir 0,52 kWh per rentada (dada de l'enunciat); la fitxa oficial dona 0,544 kWh a plena càrrega, un 4,6 % més.</p>
   </section>
 
   <section id="mat">
@@ -148,9 +165,10 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     <dl>
       <dt>Reciclabilitat</dt><dd>52 % de la massa en metalls (39 kg); 69 % si també es reciclen el PP i l'ABS marcats (52 kg)</dd>
       <dt>Contingut reciclat</dt><dd>No declarat pel fabricant (l'ACV fa servir factors mitjans de la base ICE)</dd>
-      <dt>Substàncies (≥ 0,1 %)</dt><dd>Estany a les soldadures de la placa; compliment RoHS. Additius dels plàstics i declaració REACH: pendents del fabricant</dd>
+      <dt>Additius</dt><dd>Pigments, estabilitzants i retardants de flama dels plàstics: pendents del fabricant</dd>
+      <dt>Substàncies preocupants (≥ 0,1 % en pes)</dt><dd>Declaració REACH de substàncies extremadament preocupants (SVHC): pendent del fabricant. Compliment RoHS als components elèctrics; estany a les soldadures de la placa</dd>
       <dt>Font i adquisició</dt><dd>Lots MP-2026-36 (metalls) i MP-2026-37 (plàstics i components), registrats a la traçabilitat. País d'extracció: pendent dels proveïdors</dd>
-      <dt>Minerals de conflicte</dt><dd>L'estany ho és (Reglament (UE) 2017/821): el proveïdor n'ha d'acreditar l'origen responsable</dd>
+      <dt>Minerals de conflicte</dt><dd>L'estany és un dels minerals de conflicte del Reglament (UE) 2017/821, que obliga els importadors de la UE del metall o del mineral, no el fabricant de la rentadora. El passaport en pot informar de l'origen responsable de manera voluntària</dd>
     </dl>
   </section>
 
@@ -176,9 +194,9 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     </dl>
     <div class="tbl"><table>
       <thead><tr><th>Etapa</th><th class="n">kg CO2eq</th><th class="n">%</th><th style="width:38%"></th></tr></thead>
-      <tbody id="co2body"></tbody>
+      <tbody id="co2body"><tr><td>Matèria primera</td><td class="n">171,4</td><td class="n">21,0 %</td><td><div class="bar" style="width:29.5%"></div></td></tr><tr><td>Producció</td><td class="n">0,9</td><td class="n">0,1 %</td><td><div class="bar" style="width:0.2%"></div></td></tr><tr><td>Distribució</td><td class="n">55,2</td><td class="n">6,8 %</td><td><div class="bar" style="width:9.5%"></div></td></tr><tr><td>Ús (10 anys)</td><td class="n">580,8</td><td class="n">71,2 %</td><td><div class="bar" style="width:100.0%"></div></td></tr><tr><td>Fi de vida</td><td class="n">7,4</td><td class="n">0,9 %</td><td><div class="bar" style="width:1.3%"></div></td></tr><tr class="tot"><td>Total</td><td class="n">815,8</td><td class="n">100 %</td><td></td></tr></tbody>
     </table></div>
-    <p class="note">Mètode: ACV del bressol a la tomba (GWP100), calculadora de l'Oficina Catalana del Canvi Climàtic i base ICE. La petjada d'aigua és un valor màxim: l'AWARE s'aplica a l'aigua consumida, i la major part de l'aigua de la rentadora torna a la depuradora.</p>
+    <p class="note">Mètode: ACV del bressol a la tomba (GWP100), calculadora de l'Oficina Catalana del Canvi Climàtic i base ICE. Valors arrodonits a un decimal (total exacte: 815,78 kg CO2eq). La petjada d'aigua és un valor màxim: l'AWARE s'aplica a l'aigua consumida, i la major part de l'aigua de la rentadora torna a la depuradora.</p>
     <p class="note"><b>Limitacions:</b> les dades de l'enunciat no inclouen l'energia de la fàbrica. Un passaport real calcularia la petjada amb el mètode que fixi l'acte delegat (previsiblement el PEF de la Comissió Europea) i la faria verificar per un tercer.</p>
   </section>
 
@@ -214,6 +232,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
       <li>Neteja el filtre de la bomba cada mes i el calaix del detergent cada dues setmanes.</li>
       <li>Fes un rentat de manteniment en buit a alta temperatura un cop al mes i deixa la porta entreoberta després de rentar.</li>
       <li>Anivella la rentadora per reduir les vibracions i el desgast dels rodaments i els amortidors.</li>
+      <li>Microplàstics: no consta que la rentadora porti filtre de microfibres, i cap norma europea no l'exigeix encara. Rentar a plena càrrega, a baixa temperatura i amb menys centrifugat redueix les fibres que s'alliberen.</li>
     </ul>
   </section>
 
@@ -236,7 +255,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
       <button id="tamper" type="button" class="ghost">Simula una manipulació</button>
       <span id="status" role="status"></span>
     </div>
-    <div class="chain" id="chain"></div>
+    <div class="chain" id="chain"><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>0. Creació del passaport</b><time datetime="2026-09-01T08:00:00Z">1 de set. 2026, 10:00</time></div><div>Emissor: Eloi Sanchez Gasco (FES, ARI 1) · ID DPP-ES-FES-12980-2026-000417 · versió 1.0</div><div class="hash">hash <i>5937447665783498…4010f1db</i> · anterior 0000000000000000…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>1. Recepció de metalls</b><time datetime="2026-09-08T10:15:00Z">8 de set. 2026, 12:15</time></div><div>Acer laminat i galvanitzat 20 kg + acer estructural 6 kg + acer de rodaments 2 kg · inox AISI 304 7 kg · coure 2 kg · alumini 2 kg · lot MP-2026-36</div><div class="hash">hash <i>d9ee509feacf1183…a00d031e</i> · anterior 5937447665783498…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>2. Recepció de plàstics i components</b><time datetime="2026-09-09T09:40:00Z">9 de set. 2026, 11:40</time></div><div>PP 10 kg · ABS 3 kg · EPDM 1,5 kg · PVC 1 kg · PA/POM 1,5 kg · contrapès de formigó 18 kg · placa de control 1 kg · lot MP-2026-37</div><div class="hash">hash <i>dca993c0f31f3d09…4f46c79d</i> · anterior d9ee509feacf1183…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>3. Fabricació i muntatge</b><time datetime="2026-09-22T14:30:00Z">22 de set. 2026, 16:30</time></div><div>11 passos de procés · plantilla de 100 persones · aigua assignada 1,825 m³ (0,94 kg CO2eq) · lot de producció 2026-W39</div><div class="hash">hash <i>d23ee14843a2da65…b7cb0ac4</i> · anterior dca993c0f31f3d09…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>4. Control de qualitat</b><time datetime="2026-09-23T11:05:00Z">23 de set. 2026, 13:05</time></div><div>Banc de proves: estanquitat OK · funcionament OK · consum verificat 0,52 kWh i 50 l per cicle</div><div class="hash">hash <i>2e4b2c48c70d7736…1f901637</i> · anterior d23ee14843a2da65…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>5. Distribució</b><time datetime="2026-10-02T07:30:00Z">2 d’oct. 2026, 09:30</time></div><div>Camió dièsel de flota pròpia · 21,9 l de gasoil assignats · 55,2 kg CO2eq · destí: punt de venda (Barcelona)</div><div class="hash">hash <i>cd8bf22d3a6921fb…645e734f</i> · anterior 2e4b2c48c70d7736…</div></div></div><div class="blk"><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="body"><div class="t"><b>6. Venda i inici de garantia</b><time datetime="2026-10-20T17:45:00Z">20 d’oct. 2026, 19:45</time></div><div>Primera posada en servei · garantia legal de 3 anys fins al 2029-10-20 · etiqueta energètica classe A</div><div class="hash">hash <i>fe5512a9540415a5…fabec3fb</i> · anterior cd8bf22d3a6921fb…</div></div></div><div class="blk pending"><div class="rail"><span class="dot"></span></div><div class="body"><div class="t"><b>Pròxims blocs</b></div><div class="note">Reparacions, canvis de propietari i lliurament al gestor de RAEE.</div></div></div></div>
     <p class="note">Historial de reparacions: cap reparació registrada.</p>
     <p class="note">Demostració: els hashes són reals i es recalculen al navegador, però la cadena no està ancorada en cap blockchain; per tant, només serveix per detectar canvis, no per impedir-los.</p>
   </section>
