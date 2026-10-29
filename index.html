@@ -90,7 +90,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
 </head>
 <body>
 <div class="wrap">
-  <p class="notice"><b>Prototip acadèmic.</b> Passaport elaborat per a l'Exercici 3 (SMA, Fundació Eduard Soler) per Eloi Sanchez Gasco. No és el passaport oficial del fabricant: les dades provenen de l'ACV de l'Exercici 2 i, on s'indica, són estimacions.</p>
+  <p class="notice"><b>Prototip acadèmic.</b> Passaport elaborat per a l'Exercici 3 (Fundació Eduard Soler) per Eloi Sanchez Gasco. No és el passaport oficial del fabricant: les dades provenen de l'ACV de l'Exercici 2 i, on s'indica, són estimacions.</p>
 
   <header class="id">
     <div class="eyebrow">Passaport digital de producte · Reglament (UE) 2024/1781 (ESPR)</div>
@@ -102,131 +102,187 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     </div>
     <div class="kpis">
       <div class="kpi"><div class="v"><span class="energy">A</span></div><div class="l">Classe energètica · 52 kWh/100 cicles</div></div>
-      <div class="kpi"><div class="v">815,8 kg</div><div class="l">CO2eq en tot el cicle de vida (81,6 kg/any)</div></div>
-      <div class="kpi"><div class="v">10 anys</div><div class="l">Vida útil · recanvis durant 10 anys</div></div>
-      <div class="kpi"><div class="v">52 %</div><div class="l">de la massa és metall reciclable (39 de 75 kg)</div></div>
+      <div class="kpi"><div class="v">815,8 kg</div><div class="l">CO2eq en tot el cicle de vida (172,3 kg del bressol a la porta)</div></div>
+      <div class="kpi"><div class="v">10 anys</div><div class="l">Vida útil · uns 3.650 cicles</div></div>
+      <div class="kpi"><div class="v">52–69 %</div><div class="l">de la massa és reciclable (metalls; amb plàstics marcats)</div></div>
     </div>
   </header>
 
   <nav aria-label="Seccions">
-    <a href="#ident">Identificació</a><a href="#tec">Característiques</a><a href="#mat">Materials</a><a href="#co2">Petjada de carboni</a><a href="#us">Ús</a><a href="#rep">Reparació</a><a href="#subs">Substàncies</a><a href="#fi">Fi de vida</a><a href="#conf">Conformitat</a><a href="#trac">Traçabilitat</a>
+    <a href="#ident">1 Identitat</a><a href="#mat">2 Origen dels materials</a><a href="#prod">3 Producció</a><a href="#imp">4 Impacte ambiental</a><a href="#rep">5 Durabilitat i reparació</a><a href="#us">6 Ús i manteniment</a><a href="#fi">7 Reciclatge</a><a href="#trac">8 Historial i traçabilitat</a><a href="#conf">9 Normativa</a><a href="#rol">Accés per rol</a><a href="#redis">Redisseny</a>
   </nav>
 
   <section id="ident">
-    <div class="sh"><h2><span class="n">01</span>Identificació</h2><div class="access"><span class="chip">Públic</span></div></div>
+    <div class="sh"><h2><span class="n">01</span>Identificador únic i identitat</h2><div class="access"><span class="chip">Consumidor</span></div></div>
     <dl>
+      <dt>Identificador únic (UID)</dt><dd class="mono">DPP-ES-FES-12980-2026-000417 (exemple)</dd>
       <dt>Producte</dt><dd>Rentadora domèstica de càrrega frontal, 12 kg</dd>
       <dt>Marca i model</dt><dd>Cecotec · Bolero DressCode 12980 Direct Drive Steel A</dd>
-      <dt>Identificador únic</dt><dd class="mono">DPP-ES-FES-12980-2026-000417 (identificador d'exemple)</dd>
+      <dt>Lot i unitat</dt><dd>Lot 2026-W39 · unitat 417 de 1.000</dd>
+      <dt>Fabricant</dt><dd>Planta de l'escenari de l'Exercici 2 (100 treballadors, 1.000 unitats/any). Raó social, adreça i identificador d'operador: pendents</dd>
+      <dt>País d'origen</dt><dd>Espanya (Catalunya), segons l'escenari de l'Exercici 2</dd>
       <dt>GTIN / EAN</dt><dd>Codi GS1 del fabricant (no inclòs en aquest prototip)</dd>
       <dt>Codi NC / TARIC</dt><dd class="mono">8450 20 00 · rentadores de més de 10 kg</dd>
-      <dt>Lloc de fabricació</dt><dd>Planta de l'escenari de l'Exercici 2 (100 treballadors, 1.000 unitats/any)</dd>
-      <dt>Data de fabricació</dt><dd>Setembre 2026 · lot 2026-W39</dd>
-    </dl>
-  </section>
-
-  <section id="tec">
-    <div class="sh"><h2><span class="n">02</span>Característiques tècniques</h2><div class="access"><span class="chip">Públic</span></div></div>
-    <dl>
-      <dt>Capacitat</dt><dd>12 kg</dd>
-      <dt>Motor</dt><dd>Direct Drive amb inverter (sense corretja ni escombretes)</dd>
-      <dt>Consum per cicle</dt><dd>0,52 kWh i 50 l d'aigua</dd>
-      <dt>Massa</dt><dd>75 kg (estimació)</dd>
-      <dt>Etiqueta energètica</dt><dd>Classe A segons el Reglament (UE) 2019/2014, registrada a EPREL</dd>
+      <dt>Característiques</dt><dd>Motor Direct Drive amb inverter · 0,52 kWh i 50 l per cicle · massa 75 kg (estimació)</dd>
+      <dt>Classe energètica</dt><dd>A (Reglament (UE) 2019/2014). Consum de 52 kWh/100 cicles calculat amb les dades de l'exercici; cal verificar-lo a EPREL</dd>
     </dl>
   </section>
 
   <section id="mat">
-    <div class="sh"><h2><span class="n">03</span>Composició de materials</h2><div class="access"><span class="chip">Públic</span><span class="chip r">Gestors de residus</span></div></div>
+    <div class="sh"><h2><span class="n">02</span>Origen dels materials</h2><div class="access"><span class="chip">Consumidor</span><span class="chip r">Gestors de residus</span><span class="chip r">Duana</span></div></div>
     <div class="tbl"><table>
-      <thead><tr><th>Material</th><th>Peça</th><th class="n">kg</th><th>Reciclable</th></tr></thead>
+      <thead><tr><th>Material</th><th>Peça</th><th class="n">kg</th><th class="n">% pes</th><th>Reciclable</th></tr></thead>
       <tbody>
-        <tr><td>Acer</td><td>Carcassa, estructura, rodaments</td><td class="n">28,0</td><td>Sí (ferralla)</td></tr>
-        <tr><td>Acer inoxidable AISI 304</td><td>Tambor</td><td class="n">7,0</td><td>Sí</td></tr>
-        <tr><td>PP</td><td>Cuba</td><td class="n">10,0</td><td>Sí, si està marcat (ISO 11469)</td></tr>
-        <tr><td>ABS</td><td>Panell frontal i calaix</td><td class="n">3,0</td><td>Sí, si està marcat</td></tr>
-        <tr><td>EPDM, PVC, PA, POM</td><td>Junta, mànegues, cables, clips</td><td class="n">4,0</td><td>Parcial</td></tr>
-        <tr><td>Formigó</td><td>Contrapès</td><td class="n">18,0</td><td>No (abocador)</td></tr>
-        <tr><td>Coure</td><td>Bobinat del motor i cablejat</td><td class="n">2,0</td><td>Sí</td></tr>
-        <tr><td>Alumini</td><td>Rotor i carcassa del motor</td><td class="n">2,0</td><td>Sí</td></tr>
-        <tr><td>Electrònica</td><td>Placa de control amb inverter</td><td class="n">1,0</td><td>Gestió RAEE</td></tr>
-        <tr class="tot"><td>Total</td><td></td><td class="n">75,0</td><td>39 kg de metalls recuperables</td></tr>
+        <tr><td>Acer</td><td>Carcassa, estructura, rodaments</td><td class="n">28,0</td><td class="n">37,3</td><td>Sí (ferralla)</td></tr>
+        <tr><td>Formigó</td><td>Contrapès</td><td class="n">18,0</td><td class="n">24,0</td><td>No (abocador)</td></tr>
+        <tr><td>PP</td><td>Cuba</td><td class="n">10,0</td><td class="n">13,3</td><td>Sí, si està marcat (ISO 11469)</td></tr>
+        <tr><td>Acer inoxidable AISI 304</td><td>Tambor</td><td class="n">7,0</td><td class="n">9,3</td><td>Sí</td></tr>
+        <tr><td>EPDM, PVC, PA, POM</td><td>Junta, mànegues, cables, clips</td><td class="n">4,0</td><td class="n">5,3</td><td>Parcial</td></tr>
+        <tr><td>ABS</td><td>Panell frontal i calaix</td><td class="n">3,0</td><td class="n">4,0</td><td>Sí, si està marcat</td></tr>
+        <tr><td>Coure</td><td>Bobinat del motor i cablejat</td><td class="n">2,0</td><td class="n">2,7</td><td>Sí</td></tr>
+        <tr><td>Alumini</td><td>Rotor i carcassa del motor</td><td class="n">2,0</td><td class="n">2,7</td><td>Sí</td></tr>
+        <tr><td>Electrònica</td><td>Placa de control amb inverter</td><td class="n">1,0</td><td class="n">1,3</td><td>Gestió RAEE</td></tr>
+        <tr class="tot"><td>Total</td><td></td><td class="n">75,0</td><td class="n">100</td><td></td></tr>
       </tbody>
     </table></div>
-    <p class="note">Contingut reciclat: no declarat pel fabricant. L'ACV fa servir els factors mitjans de mercat de la base ICE (Universitat de Bath).</p>
+    <dl>
+      <dt>Reciclabilitat</dt><dd>52 % de la massa en metalls (39 kg); 69 % si també es reciclen el PP i l'ABS marcats (52 kg)</dd>
+      <dt>Contingut reciclat</dt><dd>No declarat pel fabricant (l'ACV fa servir factors mitjans de la base ICE)</dd>
+      <dt>Substàncies (≥ 0,1 %)</dt><dd>Estany a les soldadures de la placa; compliment RoHS. Additius dels plàstics i declaració REACH: pendents del fabricant</dd>
+      <dt>Font i adquisició</dt><dd>Lots MP-2026-36 (metalls) i MP-2026-37 (plàstics i components), registrats a la traçabilitat. País d'extracció: pendent dels proveïdors</dd>
+      <dt>Minerals de conflicte</dt><dd>L'estany ho és (Reglament (UE) 2017/821): el proveïdor n'ha d'acreditar l'origen responsable</dd>
+    </dl>
   </section>
 
-  <section id="co2">
-    <div class="sh"><h2><span class="n">04</span>Petjada de carboni</h2><div class="access"><span class="chip">Públic</span></div></div>
+  <section id="prod">
+    <div class="sh"><h2><span class="n">03</span>Dades sobre la producció</h2><div class="access"><span class="chip">Consumidor</span><span class="chip r">Autoritats</span></div></div>
+    <dl>
+      <dt>Mètode de fabricació</dt><dd>11 passos: tall i punxonat, conformat, soldadura, pintura en pols, injecció de plàstics, premuntatge, muntatge, proves i embalatge</dd>
+      <dt>Electricitat de fàbrica</dt><dd>≈180 kWh per rentadora (estimació)</dd>
+      <dt>Gas natural</dt><dd>≈120 kWh per rentadora (estimació)</dd>
+      <dt>Aigua de la plantilla</dt><dd>1,825 m³ per rentadora</dd>
+      <dt>Residus de producció</dt><dd>≈19,1 kg per rentadora, 1,2 kg perillosos (gestor autoritzat)</dd>
+      <dt>Emissions</dt><dd>0,9 kg CO2eq amb les dades de l'enunciat; ≈80,9 kg CO2eq amb les estimacions de fàbrica</dd>
+    </dl>
+  </section>
+
+  <section id="imp">
+    <div class="sh"><h2><span class="n">04</span>Impacte ambiental</h2><div class="access"><span class="chip">Consumidor</span></div></div>
+    <dl>
+      <dt>Petjada del bressol a la porta</dt><dd>172,3 kg CO2eq (dades de l'enunciat) · ≈252,3 kg amb l'energia de fàbrica estimada</dd>
+      <dt>Petjada del cicle de vida</dt><dd>815,8 kg CO2eq · 81,6 kg per any d'ús · 0,224 kg per rentada</dd>
+      <dt>Energia durant l'ús</dt><dd>188,56 kWh/any (1.885,6 kWh en 10 anys)</dd>
+      <dt>Escassetat d'aigua (AWARE)</dt><dd>Factor d'Espanya 30,9 m³ món-eq/m³ · fabricació ≤ 56,4 · ús ≤ 5.637 m³ món-eq en 10 anys</dd>
+    </dl>
     <div class="tbl"><table>
       <thead><tr><th>Etapa</th><th class="n">kg CO2eq</th><th class="n">%</th><th style="width:38%"></th></tr></thead>
       <tbody id="co2body"></tbody>
     </table></div>
-    <p class="note">Mètode: ACV del bressol a la tomba, GWP100, factors de la calculadora de l'Oficina Catalana del Canvi Climàtic (2026) i de la base ICE per als materials. Unitat: una rentadora durant 10 anys amb una rentada al dia. Equival a 0,224 kg CO2eq per rentada.</p>
-  </section>
-
-  <section id="us">
-    <div class="sh"><h2><span class="n">05</span>Consum durant l'ús</h2><div class="access"><span class="chip">Públic</span></div></div>
-    <dl>
-      <dt>Electricitat</dt><dd>188,56 kWh/any (365 rentades)</dd>
-      <dt>Aigua</dt><dd>18,25 m³/any</dd>
-      <dt>Emissions de l'ús</dt><dd>58,1 kg CO2eq/any amb el mix elèctric català (0,258 kg/kWh)</dd>
-      <dt>Consell d'ús</dt><dd>Rentar a 20 °C en lloc de 40 °C redueix el consum elèctric més d'un 60 %. Amb electricitat 100 % renovable, les emissions de l'ús baixen un 84 %.</dd>
-    </dl>
+    <p class="note">Mètode: ACV del bressol a la tomba (GWP100), calculadora de l'Oficina Catalana del Canvi Climàtic i base ICE. La petjada d'aigua és un valor màxim: l'AWARE s'aplica a l'aigua consumida, i la major part de l'aigua de la rentadora torna a la depuradora.</p>
+    <p class="note"><b>Limitacions:</b> les dades de l'enunciat no inclouen l'energia de la fàbrica. Un passaport real calcularia la petjada amb el mètode que fixi l'acte delegat (previsiblement el PEF de la Comissió Europea) i la faria verificar per un tercer.</p>
   </section>
 
   <section id="rep">
-    <div class="sh"><h2><span class="n">06</span>Durabilitat i reparació</h2><div class="access"><span class="chip">Públic</span><span class="chip r">Reparadors professionals</span></div></div>
+    <div class="sh"><h2><span class="n">05</span>Durabilitat i reparabilitat</h2><div class="access"><span class="chip">Consumidor</span><span class="chip r">Reparadors</span></div></div>
     <dl>
-      <dt>Vida útil prevista</dt><dd>10 anys</dd>
-      <dt>Garantia legal</dt><dd>3 anys (Espanya, RDL 7/2021)</dd>
-      <dt>Recanvis</dt><dd>Disponibles fins a 10 anys després de l'última unitat del model i lliurats en un màxim de 15 dies laborables (Reglament (UE) 2019/2023)</dd>
-      <dt>Peces substituïbles</dt><dd>Motor, bomba de desguàs, electrovàlvules, placa de control, junta de la porta, porta i frontissa, amortidors, rodaments</dd>
-      <dt>Informació per a reparadors</dt><dd>Manual de servei, esquemes elèctrics i codis d'error (accés amb registre)</dd>
+      <dt>Vida útil prevista</dt><dd>10 anys, uns 3.650 cicles</dd>
+      <dt>Garantia legal</dt><dd>3 anys (RDL 7/2021). Si es repara en garantia, s'allarga 12 mesos més (Directiva (UE) 2024/1799)</dd>
+      <dt>Recanvis</dt><dd>Fins a 10 anys després de l'última unitat del model, en un màxim de 15 dies laborables (Reglament (UE) 2019/2023)</dd>
+      <dt>Informació de reparació</dt><dd>Formulari europeu d'informació sobre reparació · plataforma europea de reparació (2027)</dd>
+      <dt>Firmware</dt><dd>Versió i actualitzacions de la placa amb inverter: pendents del fabricant</dd>
     </dl>
+    <div class="tbl"><table>
+      <thead><tr><th>Peça</th><th>Temps</th><th>Eines</th><th>Recanvi</th></tr></thead>
+      <tbody>
+        <tr><td>Junta de la porta</td><td>30 min</td><td>Tornavís pla, alicates de molla</td><td>Sí</td></tr>
+        <tr><td>Bomba de desguàs</td><td>30 min</td><td>Tornavís Torx, alicates</td><td>Sí</td></tr>
+        <tr><td>Placa de control</td><td>20 min</td><td>Tornavís Torx</td><td>Sí</td></tr>
+        <tr><td>Electrovàlvula d'entrada</td><td>20 min</td><td>Tornavís Torx</td><td>Sí</td></tr>
+        <tr><td>Amortidors</td><td>30 min</td><td>Clau fixa, tornavís</td><td>Sí</td></tr>
+        <tr><td>Motor Direct Drive</td><td>45 min</td><td>Clau de vas, extractor del rotor</td><td>Sí</td></tr>
+        <tr><td>Rodaments</td><td>2–3 h</td><td>Desmuntatge complet</td><td>No per separat: cuba soldada</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Temps orientatius (estimació pròpia).</p>
   </section>
 
-  <section id="subs">
-    <div class="sh"><h2><span class="n">07</span>Substàncies</h2><div class="access"><span class="chip">Públic</span><span class="chip r">Autoritats</span></div></div>
+  <section id="us">
+    <div class="sh"><h2><span class="n">06</span>Instruccions d'ús i manteniment</h2><div class="access"><span class="chip">Consumidor</span></div></div>
     <ul class="clean">
-      <li>RoHS (Directiva 2011/65/UE): límits de plom, mercuri, cadmi, crom VI, PBB, PBDE i quatre ftalats als components elèctrics.</li>
-      <li>Placa electrònica: conté estany i traces de metalls a les soldadures. Cal portar-la a un gestor de RAEE.</li>
-      <li>REACH, substàncies extremadament preocupants (SVHC) per sobre del 0,1 %: declaració pendent del fabricant.</li>
+      <li>Fes servir el programa eco i renta a 20–30 °C: a 20 °C en lloc de 40 °C el consum elèctric baixa més d'un 60 % (Josephy et al., 2015).</li>
+      <li>Omple el tambor segons la càrrega: el sensor de pes ajusta l'aigua i el detergent.</li>
+      <li>Neteja el filtre de la bomba cada mes i el calaix del detergent cada dues setmanes.</li>
+      <li>Fes un rentat de manteniment en buit a alta temperatura un cop al mes i deixa la porta entreoberta després de rentar.</li>
+      <li>Anivella la rentadora per reduir les vibracions i el desgast dels rodaments i els amortidors.</li>
     </ul>
   </section>
 
   <section id="fi">
-    <div class="sh"><h2><span class="n">08</span>Fi de vida</h2><div class="access"><span class="chip">Públic</span><span class="chip r">Gestors de residus</span></div></div>
+    <div class="sh"><h2><span class="n">07</span>Reciclatge i eliminació</h2><div class="access"><span class="chip">Consumidor</span><span class="chip r">Gestors de residus</span></div></div>
     <dl>
       <dt>Tipus de residu</dt><dd>RAEE, categoria 4 (grans aparells, RD 110/2015) · codi LER <span class="mono">20 01 36</span></dd>
-      <dt>On portar-la</dt><dd>Punt de venda en comprar-ne una de nova (un per un, gratuït) o deixalleria municipal</dd>
-      <dt>Ordre de desmuntatge</dt><dd>1. Desconnectar i buidar l'aigua · 2. Treure la placa de control (RAEE) · 3. Treure el contrapès de formigó (18 kg) · 4. Separar el motor (coure i alumini) · 5. Separar el tambor d'inox i la carcassa d'acer · 6. Classificar els plàstics pel marcatge</dd>
-      <dt>Emissions de la gestió</dt><dd>7,4 kg CO2eq (calculadora de l'OCCC, taula B de residus)</dd>
+      <dt>Punts de recollida</dt><dd>Punt de venda en comprar-ne una de nova (un per un, gratuït) o deixalleria municipal</dd>
+      <dt>Logística inversa</dt><dd>El distribuïdor retira l'aparell vell en lliurar el nou i el porta al sistema col·lectiu de responsabilitat ampliada del productor</dd>
+      <dt>Esquema de dipòsit</dt><dd>No n'hi ha per a electrodomèstics</dd>
+      <dt>Ordre de desmuntatge</dt><dd>Placa de control (RAEE) → contrapès de formigó → motor (coure i alumini) → tambor d'inox i carcassa d'acer → plàstics per tipus</dd>
+      <dt>Emissions de la gestió</dt><dd>7,4 kg CO2eq (taula B de residus de l'OCCC)</dd>
     </dl>
   </section>
-
-  <section id="conf">
-    <div class="sh"><h2><span class="n">09</span>Conformitat</h2><div class="access"><span class="chip">Públic</span><span class="chip r">Autoritats</span></div></div>
-    <ul class="clean">
-      <li>Marcatge CE i declaració UE de conformitat</li>
-      <li>Baixa tensió (Directiva 2014/35/UE) i compatibilitat electromagnètica (Directiva 2014/30/UE)</li>
-      <li>Ecodisseny de rentadores: Reglament (UE) 2019/2023</li>
-      <li>Etiquetatge energètic: Reglament (UE) 2019/2014 i registre EPREL</li>
-      <li>RAEE: Directiva 2012/19/UE</li>
-      <li>Passaport digital: Reglament (UE) 2024/1781 (ESPR)</li>
-    </ul>
-  </section>
-
   <section id="trac">
-    <div class="sh"><h2><span class="n">10</span>Traçabilitat</h2><div class="access"><span class="chip">Públic (resum)</span><span class="chip r">Autoritats (complet)</span></div></div>
-    <p>Cada esdeveniment del cicle de vida es desa com un bloc. El bloc porta el hash SHA-256 de les seves dades i el hash del bloc anterior. Si algú canvia una dada antiga, el seu hash canvia i la cadena es trenca.</p>
+    <div class="sh"><h2><span class="n">08</span>Historial de reparacions i traçabilitat</h2><div class="access"><span class="chip">Consumidor (resum)</span><span class="chip r">Duana i autoritats</span></div></div>
+    <p>Cada esdeveniment del cicle de vida es desa com un bloc. El bloc porta el hash SHA-256 de les seves dades i el hash del bloc anterior. Si algú canvia una dada antiga, el seu hash canvia i la cadena es trenca. En un passaport real, el hash de l'últim bloc s'ancoraria en una blockchain, repetida en molts nodes que han d'arribar a un consens, perquè ningú no pogués refer la cadena.</p>
     <div class="ctrl">
       <button id="verify" type="button">Verifica la cadena</button>
       <button id="tamper" type="button" class="ghost">Simula una manipulació</button>
       <span id="status" role="status"></span>
     </div>
     <div class="chain" id="chain"></div>
-    <p class="note">Demostració: els hashes són reals i es recalculen al navegador, però la cadena no està registrada en cap blockchain pública.</p>
+    <p class="note">Historial de reparacions: cap reparació registrada.</p>
+    <p class="note">Demostració: els hashes són reals i es recalculen al navegador, però la cadena no està ancorada en cap blockchain; per tant, només serveix per detectar canvis, no per impedir-los.</p>
+  </section>
+
+  <section id="conf">
+    <div class="sh"><h2><span class="n">09</span>Normativa</h2><div class="access"><span class="chip">Consumidor</span><span class="chip r">Duana i autoritats</span></div></div>
+    <ul class="clean">
+      <li>Marcatge CE i declaració UE de conformitat</li>
+      <li>Baixa tensió (Directiva 2014/35/UE) i compatibilitat electromagnètica (Directiva 2014/30/UE)</li>
+      <li>Ecodisseny de rentadores: Reglament (UE) 2019/2023</li>
+      <li>Etiquetatge energètic: Reglament (UE) 2019/2014 i registre EPREL</li>
+      <li>Dret a reparar: Directiva (UE) 2024/1799</li>
+      <li>Substàncies: Directiva RoHS 2011/65/UE i Reglament REACH</li>
+      <li>RAEE: Directiva 2012/19/UE i RD 110/2015</li>
+      <li>Passaport digital: Reglament (UE) 2024/1781 (ESPR)</li>
+    </ul>
+  </section>
+
+  <section id="rol">
+    <div class="sh"><h2>Accés per rol</h2></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Usuari</th><th>Què pot veure</th></tr></thead>
+      <tbody>
+        <tr><td>Consumidor</td><td>Identitat, materials i reciclabilitat, impacte ambiental, durabilitat, ús i manteniment, reciclatge</td></tr>
+        <tr><td>Reparadors</td><td>A més, instruccions de reparació, codis de recanvi, diagnòstics i historial de reparacions</td></tr>
+        <tr><td>Gestors de residus</td><td>A més, desmuntatge detallat, composició per peça i substàncies</td></tr>
+        <tr><td>Duana i autoritats</td><td>Tot, inclosa la declaració de conformitat, l'origen dels materials i la traçabilitat completa</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="redis">
+    <div class="sh"><h2>Passaport de la versió redissenyada</h2></div>
+    <p>Si es fabriqués la rentadora redissenyada de l'Exercici 2, el passaport s'actualitzaria amb una versió nova:</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Camp</th><th>Model actual</th><th>Redisseny</th></tr></thead>
+      <tbody>
+        <tr><td>Massa</td><td>75 kg</td><td>71 kg</td></tr>
+        <tr><td>Contingut reciclat</td><td>No declarat</td><td>Acer de forn elèctric, 75 % de PP reciclat, alumini 100 % reciclat</td></tr>
+        <tr><td>Contrapès</td><td>Formigó (no reciclable)</td><td>Acer reciclat (recuperable)</td></tr>
+        <tr><td>Reparabilitat</td><td>Cuba soldada: rodaments no substituïbles</td><td>Cuba cargolada: rodaments substituïbles</td></tr>
+        <tr><td>Vida útil</td><td>10 anys</td><td>15 anys</td></tr>
+        <tr><td>Electricitat i aigua</td><td>188,56 kWh i 18,25 m³/any</td><td>113,14 kWh i 12,78 m³/any</td></tr>
+        <tr><td>Petjada per any d'ús</td><td>81,6 kg CO2eq</td><td>44,4 kg CO2eq (−45,6 %)</td></tr>
+      </tbody>
+    </table></div>
   </section>
 
   <footer>Passaport digital de producte · prototip acadèmic · Eloi Sanchez Gasco · ARI 1 · Fundació Eduard Soler · 2026</footer>
